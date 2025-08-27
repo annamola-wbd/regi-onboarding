@@ -9,15 +9,18 @@
   <div id="h5p-container"></div>
   <script src="https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/main.bundle.js"></script>
   <script>
-    window.addEventListener('load', function () {
-      const el = document.getElementById('h5p-container');
+  window.addEventListener('DOMContentLoaded', function () {
+
       const options = {
-        h5pJsonPath: 'h5p-content',
-        frameJs: 'https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/frame.bundle.js',
-        frameCss: 'https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/styles/h5p.css',
+          h5pJsonPath: './h5p-content/course-presentation-123', // Path to your H5P content
+          frameJs: 'https://unpkg.com/h5p-standalone@3.8.0/dist/frame.bundle.js',
+          frameCss: 'https://unpkg.com/h5p-standalone@3.8.0/dist/styles/h5p.css'
       };
-      new H5PStandalone.H5P(el, options);
-    });
-  </script>
+
+      const container = document.getElementById('h5p-container');
+
+      new H5PStandalone.H5P(container, options);
+  });      
+</script>
 </body>
 </html>
