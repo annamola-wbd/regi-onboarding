@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>H5P Standalone Example</title>
   https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/styles/h5p.css
-  https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/main.bundle.js
 </head>
 <body>
   <div id="h5p-container"></div>
+
+  <!-- Load H5PStandalone script AFTER the container is defined -->
+  https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/main.bundle.js
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    window.addEventListener('load', function () {
+      const el = document.getElementById('h5p-container');
       const options = {
-        h5pJsonPath: 'h5p-content', // folder with extracted H5P content
+        h5pJsonPath: 'h5p-content',
         frameJs: 'https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/frame.bundle.js',
         frameCss: 'https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/styles/h5p.css',
       };
-      const el = document.getElementById('h5p-container');
       new H5PStandalone.H5P(el, options);
     });
   </script>
