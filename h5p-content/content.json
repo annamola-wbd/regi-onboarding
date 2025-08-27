@@ -1,0 +1,10 @@
+{
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "question": "What does CMS stand for?",
+      "choices": ["Content Management System", "Centralized Messaging Service", "Code Management Suite"],
+      "correct": [0]
+    }
+  ]
+}
