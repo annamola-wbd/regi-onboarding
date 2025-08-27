@@ -1,0 +1,1 @@
+// Placeholder for H5P Standalone JS

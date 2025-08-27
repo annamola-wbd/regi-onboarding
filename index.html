@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>H5P Standalone Example</title>
+  <script src="h5p-standalone/main.bundle.js"></script>
+  <link rel="stylesheet" href="h5p-standalone/styles/h5p.css">
+</head>
+<body>
+  <div id="h5p-container"></div>
+  <script>
+    H5PStandalone.load('h5p-container', {
+      h5pJsonPath: 'h5p-content',
+      frame: true
+    });
+  </script>
+</body>
+</html>
