@@ -1,10 +1,30 @@
 {
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singleAnswer": false,
+    "showSolutionsRequiresInput": true,
+    "showSolutions": "always",
+    "randomAnswers": false
+  },
   "questions": [
     {
-      "type": "multiple-choice",
       "question": "What does CMS stand for?",
-      "choices": ["Content Management System", "Centralized Messaging Service", "Code Management Suite"],
-      "correct": [0]
+      "answers": [
+        {
+          "text": "Content Management System",
+          "correct": true
+        },
+        {
+          "text": "Centralized Messaging Service",
+          "correct": false
+        },
+        {
+          "text": "Code Management Suite",
+          "correct": false
+        }
+      ],
+      "type": "multiple-choice"
     }
   ]
 }
