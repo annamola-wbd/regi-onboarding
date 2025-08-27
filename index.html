@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>My H5P Content</title>
+  <head>
+    <title>My H5P Content</title>
   </head>
-<body>
-  
-  <!-- Container where H5P content will appear -->
-  <div id="h5p-container"></div>
-
-  <!-- Include h5p-standalone JavaScript -->
-  <script src="https://unpkg.com/h5p-standalone@3.8.0/dist/main.bundle.js"></script>
-  <script>
-  window.addEventListener('DOMContentLoaded', function () {
-
-      const options = {
-          h5pJsonPath: './h5p-content/course-presentation-123', // Path to your H5P content
-          frameJs: 'https://unpkg.com/h5p-standalone@3.8.0/dist/frame.bundle.js',
-          frameCss: 'https://unpkg.com/h5p-standalone@3.8.0/dist/styles/h5p.css'
-      };
-
-      const container = document.getElementById('h5p-container');
-
-      new H5PStandalone.H5P(container, options);
-  });      
-</script>
-</body>
+  <body>
+    <!-- Container where H5P content will appear -->
+    <div id="h5p-container"></div>
+    <script src="https://unpkg.com/h5p-standalone@3.8.0/dist/main.bundle.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+    
+          const options = {
+              h5pJsonPath: './h5p-content/course-presentation-123', // Path to your H5P content
+              frameJs: 'https://unpkg.com/h5p-standalone@3.8.0/dist/frame.bundle.js',
+              frameCss: 'https://unpkg.com/h5p-standalone@3.8.0/dist/styles/h5p.css'
+          };
+    
+          const container = document.getElementById('h5p-container');
+    
+          new H5PStandalone.H5P(container, options);
+      });      
+    </script>
+  </body>
 </html>
