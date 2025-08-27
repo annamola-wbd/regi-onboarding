@@ -1,8 +1,0 @@
-{
-  "title": "Sample Quiz",
-  "language": "en",
-  "mainLibrary": "H5P.MultiChoice",
-  "embedTypes": ["div"],
-  "license": "U",
-  "preloadedDependencies": []
-}
